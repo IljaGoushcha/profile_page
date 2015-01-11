@@ -1,0 +1,10 @@
+body {
+  background-image: url("../images/airport(2880_1920).jpg");
+}
+
+
+.bodyx {
+  background-image: url("../images/airport(2880_1920).jpg");
+
+  background-size: 100%;
+}

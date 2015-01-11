@@ -2,9 +2,12 @@ body {
   background-image: url("../images/airport(2880_1920).jpg");
 }
 
-
-.bodyx {
+/*.class1 {
   background-image: url("../images/airport(2880_1920).jpg");
-
-  background-size: 100%;
+  background-size: 1000px;
 }
+
+.class2 {
+  background-image: url("../images/airport(2880_1920).jpg");
+  background-size: 100px;
+}*/

@@ -1,18 +1,22 @@
+function adjustImageSize() {
+  var width = $(window).width();
+  var height = $(window).height();
+  var aspect = width/height;
+  var widthExtended = (height)*(2880/1920);
+  if (aspect >= 1.5) {
+    $('body').css({'background-size': width});
+  } else {
+    $('body').css({'background-size': widthExtended});
+  }
+};
+
 jQuery(document).ready(function() {
 
-
-  $(window).on('resize', function() {
-    console.log("width:" + $(window).width());
-    console.log("height:" + $(window).height());
-    console.log("aspect:" + $(window).width()/$(window).height());
-    // $('body').css('background-size', '100%');
-    $('body').css('.bodyx');
-    if ($(window).width < 500) {
-
-      $(this).addClass("bodyx");
-    }
-  });
+  adjustImageSize();
+  $(window).on('resize', adjustImageSize);
 
 });
 
 // 2880 by 1920 aspect 1.5
+
+

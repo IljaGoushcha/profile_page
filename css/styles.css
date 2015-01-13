@@ -2,12 +2,40 @@ body {
   background-image: url("../images/airport(2880_1920).jpg");
 }
 
-/*.class1 {
-  background-image: url("../images/airport(2880_1920).jpg");
-  background-size: 1000px;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #336680;
+  /*border-radius: 5px;*/
 }
 
-.class2 {
-  background-image: url("../images/airport(2880_1920).jpg");
-  background-size: 100px;
-}*/
+div h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #336680;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  /*margin: 0 200px 0 200px;*/
+  /*background: grey;*/
+  /*background-color: grey|transparent|0.5|inherit;*/
+}
+
+span {
+  background-color: grey;
+  opacity: 0.6;
+}
+
+div h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #336680;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  /*background: white;*/
+  /*margin: 10px 250px 10px 250px;*/
+}
+
+.profileImage {
+  margin-top: 150px;
+}

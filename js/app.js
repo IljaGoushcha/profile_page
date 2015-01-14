@@ -4,9 +4,29 @@ function adjustImageSize() {
   var aspect = width/height;
   var widthExtended = (height)*(2880/1920);
   if (aspect >= 1.5) {
-    $('body').css({'background-size': width});
+    console.log(">1.5");
+    $('.page1').css({
+      'background-size': width,
+      'width': width,
+      'height': height
+    });
+    $('.page2').css({
+      'background-size': width,
+      'width': width,
+      'height': height
+    });
   } else {
-    $('body').css({'background-size': widthExtended});
+    console.log("<1.5");
+    $('.page1').css({
+      'background-size': widthExtended,
+      'width': width,
+      'height': height
+    });
+    $('.page2').css({
+      'background-size': widthExtended,
+      'width': width,
+      'height': height
+    });
   }
 };
 

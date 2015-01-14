@@ -1,13 +1,30 @@
-body {
+/*body {
   background-image: url("../images/airport(2880_1920).jpg");
+}*/
+
+.page1 {
+  background-image: url("../images/airport(2880_1920).jpg");
+  margin: 0px;
+  padding: 20px;
+}
+.page2 {
+  background-image: url("../images/secondPage.jpg");
+  margin: 0px;
+  padding: 20px;
+}
+.page3 {
+  background-image: url("../images/thirdPage.jpg");
+  margin: 0px;
+  padding: 20px;
 }
 
+/*
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 3px solid #336680;
-  /*border-radius: 5px;*/
+  border-radius: 5px;
 }
 
 div h1 {
@@ -16,9 +33,9 @@ div h1 {
   color: #336680;
   font-family: "Helvetica Neue";
   font-weight: lighter;
-  /*margin: 0 200px 0 200px;*/
-  /*background: grey;*/
-  /*background-color: grey|transparent|0.5|inherit;*/
+  margin: 0 200px 0 200px;
+  background: grey;
+  background-color: grey|transparent|0.5|inherit;
 }
 
 span {
@@ -32,10 +49,11 @@ div h2 {
   color: #336680;
   font-family: "Helvetica Neue";
   font-weight: lighter;
-  /*background: white;*/
-  /*margin: 10px 250px 10px 250px;*/
+  background: white;
+  margin: 10px 250px 10px 250px;
 }
 
 .profileImage {
   margin-top: 150px;
 }
+*/

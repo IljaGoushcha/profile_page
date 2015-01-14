@@ -1,6 +1,34 @@
 /*body {
   background-image: url("../images/airport(2880_1920).jpg");
 }*/
+#menu {
+  position: fixed;
+  top: 0;
+  left: 900px;
+  z-index: 999;
+  width: 180px;
+  height: 50px;
+}
+#menu .glyphicon-minus {
+  display: block;
+  font-family: none;
+  line-height: 10px;
+  font-size: 5em;
+  color: #336680;
+}
+
+#menu h1 {
+  display: block;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  margin: 2px 0 0 0;
+  color: #336680;
+}
+
+#bars {
+  float: left;
+  margin: 0 5px 0 0;
+}
 
 .page1 {
   background-image: url("../images/airport(2880_1920).jpg");
@@ -18,26 +46,23 @@
   padding: 20px;
 }
 
-/*
+
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto 0 auto;
   border-bottom: 3px solid #336680;
   border-radius: 5px;
 }
 
-div h1 {
+.page1 h1, .page1 h2  {
   text-align: center;
   font-size: 60px;
   color: #336680;
   font-family: "Helvetica Neue";
   font-weight: lighter;
   margin: 0 200px 0 200px;
-  background: grey;
-  background-color: grey|transparent|0.5|inherit;
 }
-
+/*
 span {
   background-color: grey;
   opacity: 0.6;

@@ -3,6 +3,7 @@ function adjustImageSize() {
   var height = $(window).height();
   var aspect = width/height;
   var widthExtended = (height)*(2880/1920);
+  $('#menu').css({'left': width-180});
   if (aspect >= 1.5) {
     console.log(">1.5");
     $('.page1').css({
@@ -15,6 +16,11 @@ function adjustImageSize() {
       'width': width,
       'height': height
     });
+    $('.page3').css({
+      'background-size': width,
+      'width': width,
+      'height': height
+    });
   } else {
     console.log("<1.5");
     $('.page1').css({
@@ -23,6 +29,11 @@ function adjustImageSize() {
       'height': height
     });
     $('.page2').css({
+      'background-size': widthExtended,
+      'width': width,
+      'height': height
+    });
+    $('.page3').css({
       'background-size': widthExtended,
       'width': width,
       'height': height

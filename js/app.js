@@ -5,6 +5,7 @@ function adjustFontSize() {
   var height = $(window).height();
   if (height < 500 || width < 500) {
     console.log("small screen");
+    $('#menu').css({'left': width-130});
     $('.page1 h1, .page1 h2').css({
       'text-align': 'center',
       'font-size': '30px',
@@ -25,6 +26,8 @@ function adjustFontSize() {
       'background-color': 'rgba(255, 255, 255, 0.7)'
     });
   } else {
+    console.log("large screen");
+    $('#menu').css({'left': width-180});
     $('.page1 h1, .page1 h2').css({
       'text-align': 'center',
       'font-size': '60px',
@@ -52,7 +55,7 @@ function adjustImageSize() {
   var height = $(window).height();
   var aspect = width/height;
   var widthExtended = (height)*(2880/1920);
-  $('#menu').css({'left': width-180});
+
   if (aspect >= 1.5) {
     console.log(">1.5");
     $('.page1').css({

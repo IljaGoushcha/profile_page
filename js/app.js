@@ -1,5 +1,52 @@
 var menuOpen = false
 
+function adjustFontSize() {
+  var width = $(window).width();
+  var height = $(window).height();
+  if (height < 500 || width < 500) {
+    console.log("small screen");
+    $('.page1 h1, .page1 h2').css({
+      'text-align': 'center',
+      'font-size': '30px',
+      'color': '#336680',
+      'font-family': '"Helvetica Neue"',
+      'font-weight': 'lighter'
+    });
+    $('.background1').css({
+      'margin': '0 auto 0 auto',
+      'width': '200px',
+      'height': '35px',
+      'background-color': 'rgba(255, 255, 255, 0.7)'
+    });
+    $('.background2').css({
+      'margin': '0 auto 0 auto',
+      'width': '300px',
+      'height': '35px',
+      'background-color': 'rgba(255, 255, 255, 0.7)'
+    });
+  } else {
+    $('.page1 h1, .page1 h2').css({
+      'text-align': 'center',
+      'font-size': '60px',
+      'color': '#336680',
+      'font-family': '"Helvetica Neue"',
+      'font-weight': 'lighter'
+    });
+    $('.background1').css({
+      'margin': '0 auto 0 auto',
+      'width': '400px',
+      'height': '70px',
+      'background-color': 'rgba(255, 255, 255, 0.7)'
+    });
+    $('.background2').css({
+      'margin': '0 auto 0 auto',
+      'width': '500px',
+      'height': '70px',
+      'background-color': 'rgba(255, 255, 255, 0.7)'
+    });
+  }
+}
+
 function adjustImageSize() {
   var width = $(window).width();
   var height = $(window).height();
@@ -60,7 +107,9 @@ function toggleMenu() {
 jQuery(document).ready(function() {
   hideMenu();
   adjustImageSize();
+  adjustFontSize();
   $(window).on('resize', adjustImageSize);
+  $(window).on('resize', adjustFontSize);
   $('#menu-icon').on('click', toggleMenu)
 
 });

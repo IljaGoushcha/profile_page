@@ -56,7 +56,7 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 
 
-img {
+.page1 img {
   display: block;
   margin: 50px auto 0 auto;
   border-bottom: 3px solid #336680;
@@ -111,10 +111,5 @@ img {
   width: 300px;
   height: 200px;
 }
-.first-three {
-  display: inline-block;
-  margin: 0 30px 0 30px;
-  width:970px;
-  height: 220px;
-}
+
 

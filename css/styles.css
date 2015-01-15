@@ -119,5 +119,8 @@ a:hover, a:link, a:active, a:visited, h2:link {
   font-family: "Helvetica Neue";
   font-weight: lighter;
 }
+.carousel-indicators li {
+  border-color: grey;
+}
 
 

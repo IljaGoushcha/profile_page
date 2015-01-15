@@ -1,3 +1,5 @@
+var menuOpen = false
+
 function adjustImageSize() {
   var width = $(window).width();
   var height = $(window).height();
@@ -41,10 +43,25 @@ function adjustImageSize() {
   }
 };
 
-jQuery(document).ready(function() {
+function hideMenu() {
+  $('h3').hide();
+}
 
+function toggleMenu() {
+  if (menuOpen == true) {
+    $('h3').hide();
+    menuOpen = false;
+  } else {
+    $('h3').show();
+    menuOpen = true;
+  }
+};
+
+jQuery(document).ready(function() {
+  hideMenu();
   adjustImageSize();
   $(window).on('resize', adjustImageSize);
+  $('#menu-icon').on('click', toggleMenu)
 
 });
 

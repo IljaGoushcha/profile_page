@@ -2,7 +2,7 @@
   background-image: url("../images/airport(2880_1920).jpg");
 }*/
 #menu {
-  margin-top: 10px;
+  margin-top: 20px;
   position: fixed;
   top: 0;
   left: 900px;
@@ -13,7 +13,7 @@
 #menu .glyphicon-minus {
   display: block;
   font-family: none;
-  line-height: 10px;
+  line-height: 9px;
   font-size: 4em;
   color: #336680;
 }
@@ -26,9 +26,15 @@
 }
 #bars {
   float: left;
-  margin: 0 5px 0 0;
+  margin: 3px 5px 0 0;
 }
-
+#menu h3 {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+}
+#menu a:hover {
+  text-decoration: none;
+}
 .page1 {
   background-image: url("../images/airport(2880_1920).jpg");
   margin: 0px;

@@ -67,7 +67,6 @@ a:hover, a:link, a:active, a:visited, h2:link {
   text-align: center;
   font-size: 60px;
   color: #336680;
-
   font-family: "Helvetica Neue";
   font-weight: lighter;
 }
@@ -110,6 +109,15 @@ a:hover, a:link, a:active, a:visited, h2:link {
   margin: 10px 10px 10px 10px;
   width: 300px;
   height: 200px;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+.carousel-inner h3 {
+  color: #336680;
+  text-shadow: none;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
 }
 
 

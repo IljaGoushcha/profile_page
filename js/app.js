@@ -5,7 +5,8 @@ function adjustFontSize() {
   var height = $(window).height();
   if (height < 500 || width < 500) {
     console.log("small screen");
-    $('#menu').css({'left': width-130});
+    $('#menu h1').hide();
+    $('#menu').css({'left': width-50});
     $('.page1 h1, .page1 h2').css({
       'text-align': 'center',
       'font-size': '30px',
@@ -27,6 +28,7 @@ function adjustFontSize() {
     });
   } else {
     console.log("large screen");
+    $('#menu h1').show();
     $('#menu').css({'left': width-180});
     $('.page1 h1, .page1 h2').css({
       'text-align': 'center',

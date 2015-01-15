@@ -32,7 +32,11 @@
   font-family: "Helvetica Neue";
   font-weight: lighter;
 }
-#menu a:hover {
+a:hover, a:link, a:active, a:visited, h2:link {
+  text-decoration: none;
+  color: #336680;
+}
+#projects:hover, #projects:hover, #projects:visited {
   text-decoration: none;
 }
 .page1 {
@@ -41,7 +45,7 @@
   padding: 20px;
 }
 .page2 {
-  background-image: url("../images/secondPage.jpg");
+  background-image: url("../images/AbstractOrange(2880_1920).jpg");
   margin: 0px;
   padding: 20px;
 }
@@ -79,18 +83,38 @@ img {
   height: 70px;
   background-color: rgba(255, 255, 255, 0.7);
 }
-/*
-div h2 {
-  text-align: center;
-  font-size: 40px;
-  color: #336680;
-  font-family: "Helvetica Neue";
-  font-weight: lighter;
-  background: white;
-  margin: 10px 250px 10px 250px;
+.background3 {
+  margin: 0 auto 0 auto;
+  width: 80px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#tic-tac-toe {
+  background-image: url("../images/tic_tac_toe(300_200).jpg");
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+#pixelect {
+  background-image: url("../images/pixelect(300_200).jpg");
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  width: 300px;
+  height: 200px;
+}
+#emphonic {
+  background-image: url("../images/tic_tac_toe(300_200).jpg");
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  width: 300px;
+  height: 200px;
+}
+.first-three {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+  width:970px;
+  height: 220px;
 }
 
-.profileImage {
-  margin-top: 150px;
-}
-*/

@@ -44,15 +44,15 @@ function adjustImageSize() {
 };
 
 function hideMenu() {
-  $('h3').hide();
+  $('#menu-items').hide();
 }
 
 function toggleMenu() {
   if (menuOpen == true) {
-    $('h3').hide();
+    $('#menu-items').hide();
     menuOpen = false;
   } else {
-    $('h3').show();
+    $('#menu-items').show();
     menuOpen = true;
   }
 };

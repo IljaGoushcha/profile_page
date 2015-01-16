@@ -122,5 +122,9 @@ a:hover, a:link, a:active, a:visited, h2:link {
 .carousel-indicators li {
   border-color: grey;
 }
+/*#carousel1 {
+  background-image: url("images/pixelect(2880_1920)(carousel-bg).png");
+  height: 350px;
+}*/
 
 

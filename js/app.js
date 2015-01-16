@@ -7,6 +7,7 @@ function adjustFontSize() {
     console.log("small screen");
     $('#menu h1').hide();
     $('#menu').css({'left': width-50});
+    // $('.menu-items').css({'lmargine-right': '50px'});
     $('.page1 h1, .page1 h2').css({
       'text-align': 'center',
       'font-size': '30px',

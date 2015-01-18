@@ -64,10 +64,10 @@ function adjustImageSize() {
   });
   $('.item img').css({
     'height': height * 0.7,
-    'margin-top': height * 0.15
+    'margin-top': height * 0.1
   });
-  $('.item h3').css({
-    'margin': height * 0.2
+  $('.item h3:first').css({
+    'margin-top': '100px'
   });
   if (aspect >= 1.5) {
     console.log(">1.5");

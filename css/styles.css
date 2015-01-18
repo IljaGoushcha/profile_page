@@ -120,6 +120,7 @@ a:hover, a:link, a:active, a:visited, h2:link {
   border-color: grey;
 }
 .item img {
+  display: block;
   float: left;
 }
 

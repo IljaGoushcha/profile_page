@@ -58,6 +58,17 @@ function adjustImageSize() {
   var height = $(window).height();
   var aspect = width/height;
   var widthExtended = (height)*(2880/1920);
+  $('.carousel-inner').css({
+    'width': width,
+    'height': height
+  });
+  $('.item img').css({
+    'height': height * 0.7,
+    'margin-top': height * 0.15
+  });
+  $('.item h3').css({
+    'margin': height * 0.2
+  });
   if (aspect >= 1.5) {
     console.log(">1.5");
     $('.page').css({

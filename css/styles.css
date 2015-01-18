@@ -1,6 +1,3 @@
-/*body {
-  background-image: url("../images/airport(2880_1920).jpg");
-}*/
 #menu {
   margin-top: 20px;
   position: fixed;
@@ -39,17 +36,17 @@ a:hover, a:link, a:active, a:visited, h2:link {
 #projects:hover, #projects:hover, #projects:visited {
   text-decoration: none;
 }
-.page1 {
+#page1 {
   background-image: url("../images/airport(2880_1920).jpg");
   margin: 0px;
   padding: 20px;
 }
-.page2 {
+#page2 {
   background-image: url("../images/AbstractOrange(2880_1920).jpg");
   margin: 0px;
   padding: 20px;
 }
-.page3 {
+#page3 {
   background-image: url("../images/thirdPage.jpg");
   margin: 0px;
   padding: 20px;

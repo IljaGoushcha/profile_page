@@ -7,7 +7,7 @@ function adjustFontSize() {
     console.log("small screen");
     $('#menu h1').hide();
     $('#menu').css({'left': width-50});
-    // $('.menu-items').css({'lmargine-right': '50px'});
+    $('.menu-items').css({'lmargine-right': '50px'});
     $('.page1 h1, .page1 h2').css({
       'text-align': 'center',
       'font-size': '30px',
@@ -58,37 +58,16 @@ function adjustImageSize() {
   var height = $(window).height();
   var aspect = width/height;
   var widthExtended = (height)*(2880/1920);
-
   if (aspect >= 1.5) {
     console.log(">1.5");
-    $('.page1').css({
-      'background-size': width,
-      'width': width,
-      'height': height
-    });
-    $('.page2').css({
-      'background-size': width,
-      'width': width,
-      'height': height
-    });
-    $('.page3').css({
+    $('.page').css({
       'background-size': width,
       'width': width,
       'height': height
     });
   } else {
     console.log("<1.5");
-    $('.page1').css({
-      'background-size': widthExtended,
-      'width': width,
-      'height': height
-    });
-    $('.page2').css({
-      'background-size': widthExtended,
-      'width': width,
-      'height': height
-    });
-    $('.page3').css({
+    $('.page').css({
       'background-size': widthExtended,
       'width': width,
       'height': height
@@ -116,7 +95,7 @@ jQuery(document).ready(function() {
   adjustFontSize();
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
-  $('#menu-icon').on('click', toggleMenu)
+  $('#menu-icon').on('click', toggleMenu);
 
 });
 

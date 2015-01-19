@@ -113,12 +113,31 @@ function toggleMenu() {
   }
 };
 
+function moveTitles() {
+  console.log($(document).scrollTop());
+  var height = $(window).height();
+  var margin1 = (height * 2) - (($(document).scrollTop()));
+  var margin2 = (height * 3) - (($(document).scrollTop()));
+  if (margin1 > 0) {
+    $('#skills').css({
+      'margin-left': margin1
+    });
+  }
+  if (margin2 > 0) {
+    $('#contact').css({
+      'margin-left': margin2
+    });
+  }
+};
+
 jQuery(document).ready(function() {
   hideMenu();
   adjustImageSize();
   adjustFontSize();
+  moveTitles();
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
+  $(window).on('scroll', moveTitles);
   $('#menu-icon').on('click', toggleMenu);
 
 });

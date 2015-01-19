@@ -1,10 +1,8 @@
-class AmazonController < ApplicationController
+class EmailController < ApplicationController
 
-  def hello_from_profile(params)
-
+  def send_email
+    ProfileMailer.hello_from_profile.deliver
+    binding.pry
   end
 
-  def get_image
-
-  end
 end

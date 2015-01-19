@@ -42,12 +42,12 @@ a:hover, a:link, a:active, a:visited, h2:link {
   padding: 20px;
 }
 #page2 {
-  background-image: url("../images/AbstractOrange(2880_1920).jpg");
+  background-image: url("../images/abstract_blue(2880_1920).jpg");
   margin: 0px;
   padding: 20px;
 }
 #page3 {
-  background-image: url("../images/thirdPage.jpg");
+  background-image: url("../images/abstract_orange(2880_1920).jpg");
   margin: 0px;
   padding: 20px;
 }
@@ -66,6 +66,19 @@ a:hover, a:link, a:active, a:visited, h2:link {
   color: #336680;
   font-family: "Helvetica Neue";
   font-weight: lighter;
+}
+#page2 h1, #page3 h1 {
+  color: #336680;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+}
+#skills-list {
+  width: 600px;
+  margin: 0 auto 0 auto;
+  color: #737373;
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 20px;
 }
 .background1 {
   margin: 0 auto 0 auto;
@@ -96,10 +109,10 @@ a:hover, a:link, a:active, a:visited, h2:link {
   font-weight: lighter;
 }
 .carousel-indicators li {
-  border-color: grey;
+  border-color: #E6E6E6;
 }
 .carousel-indicators .active {
-  background-color: #66FF33;
+  background-color: #E6E6E6;
 }
 .item p {
   text-align: left;

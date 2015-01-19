@@ -62,16 +62,30 @@ function adjustImageSize() {
     'width': width,
     'height': height
   });
-  $('.item img').css({
-    'margin-top': (height - width * 0.5) * 0.6,
-    'width': width * 0.5
-  });
-  $('.item p, .item li').css({
-    'margin-left': width/3
-  });
-  $('.item h3').css({
-    'margin-left': (width*2)/7
-  });
+  if (width < 600) {
+    console.log("hello");
+    $('.item img').css({
+      'margin-top': height * 0.5,
+      'width': width * 0.5
+    });
+    $('.carousel-caption p, .carousel-caption li').css({
+      'margin-left': width/3
+    });
+    $('.carousel-caption h3').css({
+      'margin-left': (width*2)/7
+    });
+  } else {
+    $('.item img').css({
+      'margin-top': (height - width * 0.5) * 0.6,
+      'width': width * 0.5
+    });
+    $('.carousel-caption p, .carousel-caption li').css({
+      'margin-left': width/3
+    });
+    $('.carousel-caption h3').css({
+      'margin-left': (width*2)/7
+    });
+  }
   if (aspect >= 1.5) {
     console.log(">1.5");
     $('.page').css({

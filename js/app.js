@@ -63,11 +63,11 @@ function adjustImageSize() {
     'height': height
   });
   $('.item img').css({
-    'height': height * 0.7,
-    'margin-top': height * 0.1
+    'margin-top': (height - width * 0.5) * 0.6,
+    'width': width * 0.5
   });
-  $('.item h3:first').css({
-    'margin-top': '100px'
+  $('.item p, .item li').css({
+    'margin-left': width/3
   });
   if (aspect >= 1.5) {
     console.log(">1.5");

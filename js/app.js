@@ -69,6 +69,9 @@ function adjustImageSize() {
   $('.item p, .item li').css({
     'margin-left': width/3
   });
+  $('.item h3').css({
+    'margin-left': (width*2)/7
+  });
   if (aspect >= 1.5) {
     console.log(">1.5");
     $('.page').css({

@@ -111,7 +111,8 @@ a:hover, a:link, a:active, a:visited, h2:link {
   font-family: "Helvetica Neue";
 }
 .item h3 {
-  margin-left: 100px;
+  text-align: left;
+  margin-left: 300px;
 }
 .item img {
   margin-top: 100px;

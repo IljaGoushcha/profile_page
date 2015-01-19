@@ -98,6 +98,9 @@ a:hover, a:link, a:active, a:visited, h2:link {
 .carousel-indicators li {
   border-color: grey;
 }
+.carousel-indicators .active {
+  background-color: #66FF33;
+}
 .item p {
   text-align: left;
   text-shadow: none;
@@ -110,9 +113,8 @@ a:hover, a:link, a:active, a:visited, h2:link {
   color: grey;
   font-family: "Helvetica Neue";
 }
-.item h3 {
+.carousel-caption h3 {
   text-align: left;
-  margin-left: 300px;
 }
 .item img {
   width: 50%;

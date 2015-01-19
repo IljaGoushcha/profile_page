@@ -27,6 +27,9 @@ function adjustFontSize() {
       'height': '35px',
       'background-color': 'rgba(255, 255, 255, 0.7)'
     });
+    $('#skills-list p').css({
+      'font-size': '15px'
+    });
   } else {
     console.log("large screen");
     $('#menu h1').show();
@@ -49,6 +52,9 @@ function adjustFontSize() {
       'width': '500px',
       'height': '70px',
       'background-color': 'rgba(255, 255, 255, 0.7)'
+    });
+    $('#skills-list p').css({
+      'font-size': '20px'
     });
   }
 }
@@ -114,7 +120,6 @@ function toggleMenu() {
 };
 
 function moveTitles() {
-  console.log($(document).scrollTop());
   var height = $(window).height();
   var margin1 = (height * 2) - (($(document).scrollTop()));
   var margin2 = (height * 3) - (($(document).scrollTop()));

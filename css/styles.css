@@ -74,11 +74,13 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 #skills-list {
   width: 600px;
-  margin: 0 auto 0 auto;
+  margin: 50px auto 0 auto;
   color: #737373;
   font-family: "Helvetica Neue";
   font-weight: normal;
-  font-size: 20px;
+}
+#skills-list em {
+  color: #00B200;
 }
 .background1 {
   margin: 0 auto 0 auto;
@@ -131,6 +133,9 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 .item img {
   width: 50%;
+}
+#page3 .container {
+  padding-top: 100px;
 }
 
 

@@ -107,15 +107,16 @@ function adjustImageSize() {
 };
 
 function hideMenu() {
-  $('#menu-items').hide();
+  $('.menu-items').hide();
 }
 
 function toggleMenu() {
+  console.log("hi");
   if (menuOpen == true) {
-    $('#menu-items').hide();
+    $('.menu-items').hide();
     menuOpen = false;
   } else {
-    $('#menu-items').show();
+    $('.menu-items').show();
     menuOpen = true;
   }
 };
@@ -145,7 +146,7 @@ jQuery(document).ready(function() {
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
   $(window).on('scroll', moveTitles);
-  $('#menu-icon').on('click', toggleMenu);
+  $('#menu').on('mouseover', toggleMenu);
 
 });
 

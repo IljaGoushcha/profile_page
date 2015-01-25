@@ -64,6 +64,7 @@ function adjustImageSize() {
   var height = $(window).height();
   var aspect = width/height;
   var widthExtended = (height)*(2880/1920);
+
   $('.carousel-inner').css({
     'width': width,
     'height': height
@@ -121,14 +122,15 @@ function toggleMenu() {
 
 function moveTitles() {
   var height = $(window).height();
+  var width = $(window).width();
   var margin1 = (height * 2) - (($(document).scrollTop()));
   var margin2 = (height * 3) - (($(document).scrollTop()));
-  if (margin1 > 0) {
+  if (margin1 > 0 && margin1 < (width-200)) {
     $('#skills').css({
       'margin-left': margin1
     });
   }
-  if (margin2 > 0) {
+  if (margin2 > 0 && margin2 < (width-200)) {
     $('#contact').css({
       'margin-left': margin2
     });

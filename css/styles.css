@@ -1,7 +1,7 @@
 
 /*--- Navigation Menu --- start*/
 #menu {
-  /*border: 1px solid green;*/
+  border: 1px solid green;
   position: fixed;
   top: 20px;
   right: 50px;
@@ -10,10 +10,11 @@
   background-color: red;
 }*/
 .menu-icon {
-  /*border: 1px solid green;*/
+  border: 1px solid green;
   width: 148px;
 }
 .hamburger-icon {
+  border: 1px solid green;
   float: left;
   margin: 13px 0 0 2px;
   width: 45px;

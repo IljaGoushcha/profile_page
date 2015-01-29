@@ -1,6 +1,7 @@
 
 /*--- Navigation Menu --- start*/
 #menu {
+  z-index: 999;
   border: 1px solid green;
   position: fixed;
   top: 20px;

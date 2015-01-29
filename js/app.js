@@ -108,7 +108,10 @@ function adjustImageSize() {
 
 function hideMenu() {
   $('.menu-items').hide();
-}
+  $('#option1').hide();
+  $('#option2').hide();
+  $('#option3').hide();
+};
 
 function toggleMenu() {
   console.log("hi");
@@ -119,6 +122,11 @@ function toggleMenu() {
     $('.menu-items').show();
     menuOpen = true;
   }
+};
+// setInterval(function () {alert("Hello")}, 3000);
+// var myVar=setInterval(function () {myTimer()}, 1000);
+function openMenu() {
+  setInterval(function () {$('#option1').show();}, 1000);
 };
 
 function moveTitles() {
@@ -146,7 +154,7 @@ jQuery(document).ready(function() {
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
   $(window).on('scroll', moveTitles);
-  $('.menu-icon').on('mouseenter', toggleMenu);
+  $('.menu-icon').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', toggleMenu);
 
 });

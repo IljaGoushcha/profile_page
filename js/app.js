@@ -106,7 +106,7 @@ function adjustImageSize() {
   }
 };
 
-function hideMenu() {
+function hideOptions() {
   $('.menu-items').hide();
   $('#option1').hide();
   $('#option2').hide();
@@ -126,7 +126,20 @@ function toggleMenu() {
 // setInterval(function () {alert("Hello")}, 3000);
 // var myVar=setInterval(function () {myTimer()}, 1000);
 function openMenu() {
-  setInterval(function () {$('#option1').show();}, 1000);
+  console.log("open");
+  setInterval(function () {$('#option1').show(500)}, 100);
+  setInterval(function () {$('#option2').show(500)}, 200);
+  setInterval(function () {$('#option3').show(500)}, 300);
+};
+
+function hideMenu() {
+  console.log("hide");
+  $('#option1').hide();
+  $('#option2').hide();
+  $('#option3').hide();
+  // setInterval(function () {$('#option1').hide()}, 100);
+  // setInterval(function () {$('#option2').hide()}, 200);
+  // setInterval(function () {$('#option3').hide()}, 300);
 };
 
 function moveTitles() {
@@ -147,7 +160,7 @@ function moveTitles() {
 };
 
 jQuery(document).ready(function() {
-  hideMenu();
+  hideOptions();
   adjustImageSize();
   adjustFontSize();
   moveTitles();
@@ -155,7 +168,7 @@ jQuery(document).ready(function() {
   $(window).on('resize', adjustFontSize);
   $(window).on('scroll', moveTitles);
   $('.menu-icon').on('mouseenter', openMenu);
-  $('#menu').on('mouseleave', toggleMenu);
+  $('#menu').on('mouseleave', hideMenu);
 
 });
 

@@ -29,15 +29,15 @@
   margin: 4px;
 }
 .menu-icon p {
-  font-family: "Helvetica Neue";
-  font-weight: lighter;
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   margin: 0 0 0 50px;
   font-size: 40px;
   color: #336680;
 }
 #menu h3 {
-  font-family: "Helvetica Neue";
-  font-weight: lighter;
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   text-align: right;
   color: #336680;
   transition-property: font-weight;
@@ -87,14 +87,14 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 #page2 h1, #page3 h1 {
   color: #336680;
-  font-family: "Helvetica Neue";
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 #skills-list {
   width: 600px;
   margin: 50px auto 0 auto;
   color: #737373;
-  font-family: "Helvetica Neue";
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 #skills-list em {
@@ -125,8 +125,8 @@ a:hover, a:link, a:active, a:visited, h2:link {
 .carousel-inner h3 {
   color: #336680;
   text-shadow: none;
-  font-family: "Helvetica Neue";
-  font-weight: lighter;
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 .carousel-indicators li {
   border-color: #E6E6E6;
@@ -138,13 +138,13 @@ a:hover, a:link, a:active, a:visited, h2:link {
   text-align: left;
   text-shadow: none;
   color: grey;
-  font-family: "Helvetica Neue";
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
 }
 .item li {
   text-align: left;
   text-shadow: none;
   color: grey;
-  font-family: "Helvetica Neue";
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
 }
 .carousel-caption h3 {
   text-align: left;

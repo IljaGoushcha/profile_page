@@ -9,7 +9,10 @@ function adjustFontSize() {
     $('.hamburger-icon').css({
       'margin-left': '100px'
     });
-    $('#menu').css({'right': '10px'});
+    $('#menu').css({
+      'right': '10px',
+      'top': '5px'
+    });
 
     $('#page1 h1, #page1 h2').css({
       'font-size': '30px',
@@ -35,7 +38,10 @@ function adjustFontSize() {
     $('.hamburger-icon').css({
       'margin-left': '0'
     });
-    $('#menu').css({'right': '50px'});
+    $('#menu').css({
+      'right': '50px',
+      'top': '20px'
+    });
 
     $('#page1 h1, #page1 h2').css({
       'font-size': '60px',

@@ -30,7 +30,7 @@ function adjustFontSize() {
       'background-color': 'rgba(255, 255, 255, 0.7)'
     });
     $('#skills-list p').css({
-      'font-size': '15px'
+      'font-size': '15px',
     });
   } else {
     console.log("large screen");
@@ -81,6 +81,7 @@ function adjustImageSize() {
     'margin-left': width/3
   });
   if (width < 600) {
+    console.log("width<600");
     $('.carousel-caption h3:first').css({
       'margin-left': width/10
     });
@@ -118,17 +119,6 @@ function hideOptions() {
   $('#option3').hide();
 };
 
-function toggleMenu() {
-  console.log("hi");
-  if (menuOpen == true) {
-    $('.menu-items').hide();
-    menuOpen = false;
-  } else {
-    $('.menu-items').show();
-    menuOpen = true;
-  }
-};
-
 function openMenu() {
   console.log("open");
   setTimeout(function () {$('#option1').show(500)}, 100);
@@ -149,11 +139,13 @@ function moveTitles() {
   var margin1 = (height * 2) - (($(document).scrollTop()));
   var margin2 = (height * 3) - (($(document).scrollTop()));
   if (margin1 > 0 && margin1 < (width-200)) {
+    console.log("margin1");
     $('#skills').css({
       'margin-left': margin1
     });
   }
   if (margin2 > 0 && margin2 < (width-200)) {
+    console.log("margin2");
     $('#contact').css({
       'margin-left': margin2
     });

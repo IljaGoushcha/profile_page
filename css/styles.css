@@ -57,17 +57,14 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 #page1 {
   background-image: url("../images/airport(2880_1920).jpg");
-  margin: 0px;
   padding: 20px;
 }
 #page2 {
   background-image: url("../images/abstract_blue(2880_1920).jpg");
-  margin: 0px;
   padding: 20px;
 }
 #page3 {
   background-image: url("../images/abstract_orange(2880_1920).jpg");
-  margin: 0px;
   padding: 20px;
 }
 #page1 img {
@@ -82,7 +79,6 @@ a:hover, a:link, a:active, a:visited, h2:link {
   font-size: 60px;
 }
 #skills-list {
-  width: 600px;
   margin: 50px auto 0 auto;
   color: #737373;
 }
@@ -99,12 +95,6 @@ a:hover, a:link, a:active, a:visited, h2:link {
   margin: 0 auto 0 auto;
   width: 500px;
   height: 70px;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.background3 {
-  margin: 0 auto 0 auto;
-  width: 80px;
-  height: 30px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .carousel-control.left, .carousel-control.right {

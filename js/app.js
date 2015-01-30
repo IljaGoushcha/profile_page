@@ -9,11 +9,9 @@ function adjustFontSize() {
     // $('#menu').css({'left': width-50});
     $('.menu-items').css({'lmargine-right': '50px'});
     $('#page1 h1, #page1 h2').css({
-      'text-align': 'center',
+
       'font-size': '30px',
-      'color': '#336680',
-      'font-family': '"Helvetica Neue"',
-      'font-weight': 'lighter'
+
     });
     $('.background1').css({
       'margin': '0 auto 0 auto',
@@ -35,11 +33,9 @@ function adjustFontSize() {
     // $('#menu h1').show();
     // $('#menu').css({'left': width-180});
     $('#page1 h1, #page1 h2').css({
-      'text-align': 'center',
+
       'font-size': '60px',
-      'color': '#336680',
-      'font-family': '"Helvetica Neue"',
-      'font-weight': 'lighter'
+
     });
     $('.background1').css({
       'margin': '0 auto 0 auto',

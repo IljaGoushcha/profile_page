@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src: url('../fonts/HelveticaNeueLTStd-UltLt.otf');
-  font-style: ultralight;
+  font-style: normal;
   font-weight: normal;
 }
 /*--- Navigation Menu --- start*/
@@ -82,8 +82,8 @@ a:hover, a:link, a:active, a:visited, h2:link {
   text-align: center;
   font-size: 60px;
   color: #336680;
-  font-family: "HelveticaNeueLTStd";
-  font-weight: ultralight;
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 #page2 h1, #page3 h1 {
   color: #336680;

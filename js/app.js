@@ -123,23 +123,19 @@ function toggleMenu() {
     menuOpen = true;
   }
 };
-// setInterval(function () {alert("Hello")}, 3000);
-// var myVar=setInterval(function () {myTimer()}, 1000);
+
 function openMenu() {
   console.log("open");
-  $('#option1').show(500);
-  $('#option2').show(500);
-  $('#option3').show(500);
+  setTimeout(function () {$('#option1').show(500)}, 100);
+  setTimeout(function () {$('#option2').show(500)}, 200);
+  setTimeout(function () {$('#option3').show(500)}, 300);
 };
 
 function hideMenu() {
   console.log("hide");
-  $('#option1').hide(500);
-  $('#option2').hide(500);
-  $('#option3').hide(500);
-  // setInterval(function () {$('#option1').hide()}, 100);
-  // setInterval(function () {$('#option2').hide()}, 200);
-  // setInterval(function () {$('#option3').hide()}, 300);
+  setTimeout(function () {$('#option1').hide(500)}, 300);
+  setTimeout(function () {$('#option2').hide(500)}, 200);
+  setTimeout(function () {$('#option3').hide(500)}, 100);
 };
 
 function moveTitles() {

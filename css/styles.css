@@ -24,7 +24,7 @@ body {
 .hamburger-icon {
   /*border: 1px solid green;*/
   float: left;
-  margin: 13px 0 0 2px;
+  margin: 7px 0 0 2px;
   width: 45px;
 }
 .hamburger-icon .bar {
@@ -34,7 +34,7 @@ body {
   margin: 4px;
 }
 .menu-icon p {
-  margin: 0 0 0 50px;
+  margin: 7px 0 0 50px;
   font-size: 40px;
 }
 #menu h3 {

@@ -127,16 +127,16 @@ function toggleMenu() {
 // var myVar=setInterval(function () {myTimer()}, 1000);
 function openMenu() {
   console.log("open");
-  setInterval(function () {$('#option1').show(500)}, 100);
-  setInterval(function () {$('#option2').show(500)}, 200);
-  setInterval(function () {$('#option3').show(500)}, 300);
+  $('#option1').show(500);
+  $('#option2').show(500);
+  $('#option3').show(500);
 };
 
 function hideMenu() {
   console.log("hide");
-  $('#option1').hide();
-  $('#option2').hide();
-  $('#option3').hide();
+  $('#option1').hide(500);
+  $('#option2').hide(500);
+  $('#option3').hide(500);
   // setInterval(function () {$('#option1').hide()}, 100);
   // setInterval(function () {$('#option2').hide()}, 200);
   // setInterval(function () {$('#option3').hide()}, 300);
@@ -160,16 +160,15 @@ function moveTitles() {
 };
 
 jQuery(document).ready(function() {
-  hideOptions();
+  hideMenu();
   adjustImageSize();
   adjustFontSize();
   moveTitles();
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
   $(window).on('scroll', moveTitles);
-  $('.menu-icon').on('mouseenter', openMenu);
+  $('#menu').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', hideMenu);
-
 });
 
 // 2880 by 1920 aspect 1.5

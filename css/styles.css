@@ -1,3 +1,8 @@
+body {
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #336680;
+}
 @font-face {
   font-family: 'HelveticaNeueLTStd';
   src: url('../fonts/HelveticaNeueLTStd-UltLt.otf');
@@ -29,17 +34,11 @@
   margin: 4px;
 }
 .menu-icon p {
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
-  font-weight: normal;
   margin: 0 0 0 50px;
   font-size: 40px;
-  color: #336680;
 }
 #menu h3 {
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
-  font-weight: normal;
   text-align: right;
-  color: #336680;
   transition-property: font-weight;
   transition-duration: 0.05s;
 }
@@ -49,6 +48,8 @@
 /*--- Navigation Menu --- end*/
 a:hover, a:link, a:active, a:visited, h2:link {
   text-decoration: none;
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   color: #336680;
 }
 #projects:hover, #projects:hover, #projects:visited {
@@ -69,8 +70,6 @@ a:hover, a:link, a:active, a:visited, h2:link {
   margin: 0px;
   padding: 20px;
 }
-
-
 #page1 img {
   display: block;
   margin: 50px auto 0 auto;
@@ -81,21 +80,11 @@ a:hover, a:link, a:active, a:visited, h2:link {
 #page1 h1, #page1 h2  {
   text-align: center;
   font-size: 60px;
-  color: #336680;
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
-  font-weight: normal;
-}
-#page2 h1, #page3 h1 {
-  color: #336680;
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
-  font-weight: normal;
 }
 #skills-list {
   width: 600px;
   margin: 50px auto 0 auto;
   color: #737373;
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
-  font-weight: normal;
 }
 #skills-list em {
   color: #00B200;
@@ -118,15 +107,11 @@ a:hover, a:link, a:active, a:visited, h2:link {
   height: 30px;
   background-color: rgba(255, 255, 255, 0.7);
 }
-
 .carousel-control.left, .carousel-control.right {
-    background-image: none
+  background-image: none
 }
 .carousel-inner h3 {
-  color: #336680;
   text-shadow: none;
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
-  font-weight: normal;
 }
 .carousel-indicators li {
   border-color: #E6E6E6;
@@ -138,13 +123,11 @@ a:hover, a:link, a:active, a:visited, h2:link {
   text-align: left;
   text-shadow: none;
   color: grey;
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
 }
 .item li {
   text-align: left;
   text-shadow: none;
   color: grey;
-  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
 }
 .carousel-caption h3 {
   text-align: left;

@@ -163,7 +163,7 @@ jQuery(document).ready(function() {
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
   $(window).on('scroll', moveTitles);
-  $('#menu').on('mouseenter', openMenu);
+  $('.menu-icon').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', hideMenu);
 });
 

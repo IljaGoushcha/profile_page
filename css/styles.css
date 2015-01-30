@@ -2,20 +2,17 @@
 /*--- Navigation Menu --- start*/
 #menu {
   z-index: 999;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   position: fixed;
   top: 20px;
   right: 50px;
 }
-/*#menu:hover {
-  background-color: red;
-}*/
 .menu-icon {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   width: 148px;
 }
 .hamburger-icon {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   float: left;
   margin: 13px 0 0 2px;
   width: 45px;
@@ -33,7 +30,17 @@
   font-size: 40px;
   color: #336680;
 }
-
+#menu h3 {
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  text-align: right;
+  color: #336680;
+  transition-property: font-weight;
+  transition-duration: 0.05s;
+}
+#menu h3:hover {
+  font-weight: normal;
+}
 /*--- Navigation Menu --- end*/
 a:hover, a:link, a:active, a:visited, h2:link {
   text-decoration: none;

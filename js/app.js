@@ -152,6 +152,40 @@ function moveTitles() {
   }
 };
 
+function nextSlide() {
+  var currentSlideId = $("#page4").find(".slide-on").attr("id");
+  var currentId = parseInt(currentSlideId.replace("my-slide", ""));
+  if ( currentId == 4) {
+    var nextSlideId = "my-slide1";
+  } else {
+    var nextId = currentId + 1;
+    var nextSlideId = "my-slide" + nextId;
+  }
+  console.log("current slide id: " + currentSlideId);
+  console.log("next slide id: " + nextSlideId);
+  $('#' + currentSlideId).removeClass("slide-on");
+  $('#' + currentSlideId).addClass("slide-off");
+  $('#' + nextSlideId).removeClass("slide-off");
+  $('#' + nextSlideId).addClass("slide-on");
+};
+
+function prevSlide() {
+  var currentSlideId = $("#page4").find(".slide-on").attr("id");
+  var currentId = parseInt(currentSlideId.replace("my-slide", ""));
+  if ( currentId == 1) {
+    var nextSlideId = "my-slide4";
+  } else {
+    var nextId = currentId - 1;
+    var nextSlideId = "my-slide" + nextId;
+  }
+  console.log("current slide id: " + currentSlideId);
+  console.log("next slide id: " + nextSlideId);
+  $('#' + currentSlideId).removeClass("slide-on");
+  $('#' + currentSlideId).addClass("slide-off");
+  $('#' + nextSlideId).removeClass("slide-off");
+  $('#' + nextSlideId).addClass("slide-on");
+};
+
 jQuery(document).ready(function() {
   hideMenu();
   adjustImageSize();
@@ -162,6 +196,8 @@ jQuery(document).ready(function() {
   $(window).on('scroll', moveTitles);
   $('.menu-icon').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', hideMenu);
+  $('img[src="images/arrow-right.png"]').on('click', nextSlide);
+  $('img[src="images/arrow-left.png"]').on('click', prevSlide);
 });
 
 // 2880 by 1920 aspect 1.5

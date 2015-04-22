@@ -62,7 +62,7 @@ a:hover, a:link, a:active, a:visited, h2:link {
   background-position: center;
 }
 #page4 {
-  background-image: url("../images/airport(2000)pale(2).jpg");
+  background-image: url("../images/airport(2000)pale.jpg");
   padding: 20px;
   background-size: cover;
   background-position: center;
@@ -100,14 +100,28 @@ a:hover, a:link, a:active, a:visited, h2:link {
   opacity: 0.7;
   cursor: pointer;
 }
-#my-slide1 img[src="images/emphonic-player.png"] {
+.my-slide img {
   width: 100%;
+}
+.slide-on {
+  display: block;
+}
+.slide-off {
+  display: none;
 }
 #page2 {
   background-image: url("../images/abstract_blue(2000).jpg");
   padding: 20px;
   background-size: cover;
   background-position: center;
+}
+#page2 p {
+  font-weight: bold;
+  color: #4C4C4C;
+}
+#page2 strong {
+  font-weight: bold;
+  color: green;
 }
 #page3 {
   background-image: url("../images/abstract_orange(2000).jpg");
@@ -175,12 +189,6 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 #page3 .container {
   padding-top: 100px;
-}
-#my-slide1 {
-  display: block;
-}
-#my-slide2 {
-  display: none;
 }
 
 

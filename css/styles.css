@@ -97,6 +97,9 @@ a:hover, a:link, a:active, a:visited, h2:link {
   margin-left: 1%;
   margin-right: 1%;
 }
+#page1 img[src="images/github.png"]:hover, #page1 img[src="images/linkedin.png"]:hover {
+  opacity: 0.7;
+}
 #page1 ul {
   margin-top: 10px;
   list-style-type: none;

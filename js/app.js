@@ -1,5 +1,3 @@
-var menuOpen = false
-
 function adjustFontSize() {
   var width = $(window).width();
   var height = $(window).height();
@@ -70,31 +68,6 @@ function adjustImageSize() {
   var aspect = width/height;
   var widthExtended = (height)*(2880/1920);
 
-  $('.carousel-inner').css({
-    'width': width,
-    'height': height
-  });
-  $('.carousel-caption p, .carousel-caption li').css({
-    'margin-left': width/3
-  });
-  $('.carousel-caption h3').css({
-    'margin-left': width/3
-  });
-  if (width < 600) {
-    console.log("width<600");
-    $('.carousel-caption h3:first').css({
-      'margin-left': width/10
-    });
-    $('.item img').css({
-      'margin-top': height * 0.5,
-      'width': width * 0.5
-    });
-  } else {
-    $('.item img').css({
-      'margin-top': (height - width * 0.5) * 0.6,
-      'width': width * 0.5
-    });
-  }
   if (aspect >= 1.5) {
     console.log(">1.5");
     $('.page').css({
@@ -153,7 +126,7 @@ function moveTitles() {
 };
 
 function nextSlide() {
-  var currentSlideId = $("#page4").find(".slide-on").attr("id");
+  var currentSlideId = $("#page2").find(".slide-on").attr("id");
   var currentId = parseInt(currentSlideId.replace("my-slide", ""));
   if ( currentId == 4) {
     var nextSlideId = "my-slide1";
@@ -170,7 +143,7 @@ function nextSlide() {
 };
 
 function prevSlide() {
-  var currentSlideId = $("#page4").find(".slide-on").attr("id");
+  var currentSlideId = $("#page2").find(".slide-on").attr("id");
   var currentId = parseInt(currentSlideId.replace("my-slide", ""));
   if ( currentId == 1) {
     var nextSlideId = "my-slide4";

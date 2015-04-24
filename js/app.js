@@ -101,9 +101,9 @@ function openMenu() {
 
 function hideMenu() {
   console.log("hide");
-  setTimeout(function () {$('#option1').hide(500)}, 300);
-  setTimeout(function () {$('#option2').hide(500)}, 200);
-  setTimeout(function () {$('#option3').hide(500)}, 100);
+  setTimeout(function () {$('#option1').hide(500)}, 600);
+  setTimeout(function () {$('#option2').hide(500)}, 500);
+  setTimeout(function () {$('#option3').hide(500)}, 400);
 };
 
 function moveTitles() {

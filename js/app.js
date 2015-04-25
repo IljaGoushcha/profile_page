@@ -85,13 +85,6 @@ function adjustImageSize() {
   }
 };
 
-function hideOptions() {
-  $('.menu-items').hide();
-  $('#option1').hide();
-  $('#option2').hide();
-  $('#option3').hide();
-};
-
 function openMenu() {
   console.log("open");
   setTimeout(function () {$('#option1').show(500)}, 100);
@@ -104,25 +97,6 @@ function hideMenu() {
   setTimeout(function () {$('#option1').hide(500)}, 600);
   setTimeout(function () {$('#option2').hide(500)}, 500);
   setTimeout(function () {$('#option3').hide(500)}, 400);
-};
-
-function moveTitles() {
-  var height = $(window).height();
-  var width = $(window).width();
-  var margin1 = (height * 2) - (($(document).scrollTop()));
-  var margin2 = (height * 3) - (($(document).scrollTop()));
-  if (margin1 > 0 && margin1 < (width-200)) {
-    console.log("margin1");
-    $('#skills').css({
-      'margin-left': margin1
-    });
-  }
-  if (margin2 > 0 && margin2 < (width-200)) {
-    console.log("margin2");
-    $('#contact').css({
-      'margin-left': margin2
-    });
-  }
 };
 
 function nextSlide() {
@@ -163,10 +137,9 @@ jQuery(document).ready(function() {
   hideMenu();
   adjustImageSize();
   adjustFontSize();
-  moveTitles();
+
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
-  $(window).on('scroll', moveTitles);
   $('.menu-icon').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', hideMenu);
   $('img[src="images/arrow-right.png"]').on('click', nextSlide);

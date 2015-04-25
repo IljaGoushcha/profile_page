@@ -47,6 +47,9 @@ body {
 #menu h3:hover {
   font-weight: normal;
 }
+.option {
+  display: none;
+}
 .option a:link, .option a:active, .option a:visited {
   text-decoration: none;
   font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
@@ -109,6 +112,7 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 #page1 ul {
   margin-top: 10px;
+  padding: 0;
   list-style-type: none;
   text-align: center;
 }
@@ -156,13 +160,13 @@ a:hover, a:link, a:active, a:visited, h2:link {
   opacity: 0.7;
   cursor: pointer;
 }
-.my-slide img {
+#page2 .my-slide img {
   width: 100%;
 }
-.slide-on {
+#page2 .slide-on {
   display: block;
 }
-.slide-off {
+#page2 .slide-off {
   display: none;
 }
 #page2 .btn-primary {
@@ -174,7 +178,7 @@ a:hover, a:link, a:active, a:visited, h2:link {
   border-color: #CC94DC;
 }
 #page3 {
-  background-image: url("../images/abstract_blue(2000)2.png");
+  background-image: url("../images/abstract_blue(2000).jpg");
   padding: 20px;
   background-size: cover;
   background-position: center;

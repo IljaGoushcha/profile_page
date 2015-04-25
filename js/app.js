@@ -30,6 +30,12 @@ function adjustFontSize() {
     $('#skills-list p').css({
       'font-size': '15px',
     });
+    $('#page2 p, #page2 ul').css({
+      'font-size': '1.2em',
+    });
+    $('#page2 h3').css({
+      'font-size': '1.5em',
+    });
   } else {
     console.log("large screen");
     $('#menu p').show();
@@ -59,30 +65,22 @@ function adjustFontSize() {
     $('#skills-list p').css({
       'font-size': '20px'
     });
+    $('#page2 p, #page2 ul').css({
+      'font-size': '1.5em',
+    });
+    $('#page2 h3').css({
+      'font-size': '2em',
+    });
   }
 }
 
-function adjustImageSize() {
+function adjustPage() {
   var width = $(window).width();
   var height = $(window).height();
-  var aspect = width/height;
-  var widthExtended = (height)*(2880/1920);
-
-  if (aspect >= 1.5) {
-    console.log(">1.5");
-    $('.page').css({
-      'background-size': width,
-      'width': width,
-      'height': height
-    });
-  } else {
-    console.log("<1.5");
-    $('.page').css({
-      'background-size': widthExtended,
-      'width': width,
-      'height': height
-    });
-  }
+  $('.page').css({
+    'width': width,
+    'height': height
+  });
 };
 
 function adjustArrows() {
@@ -141,11 +139,11 @@ function prevSlide() {
 
 jQuery(document).ready(function() {
   hideMenu();
-  adjustImageSize();
+  adjustPage();
   adjustFontSize();
   adjustArrows();
 
-  $(window).on('resize', adjustImageSize);
+  $(window).on('resize', adjustPage);
   $(window).on('resize', adjustFontSize);
   $(window).on('resize', adjustArrows);
   $('.menu-icon').on('mouseenter', openMenu);
@@ -153,7 +151,5 @@ jQuery(document).ready(function() {
   $('img[src="images/arrow-right.png"]').on('click', nextSlide);
   $('img[src="images/arrow-left.png"]').on('click', prevSlide);
 });
-
-// 2880 by 1920 aspect 1.5
 
 

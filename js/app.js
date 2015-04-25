@@ -85,6 +85,12 @@ function adjustImageSize() {
   }
 };
 
+function adjustArrows() {
+  var height = $(window).height();
+  $('#page2 img[src="images/arrow-right.png"]').css({ 'width': height*0.05 });
+  $('#page2 img[src="images/arrow-left.png"]').css({ 'width': height*0.05 });
+};
+
 function openMenu() {
   console.log("open");
   setTimeout(function () {$('#option1').show(500)}, 100);
@@ -137,9 +143,11 @@ jQuery(document).ready(function() {
   hideMenu();
   adjustImageSize();
   adjustFontSize();
+  adjustArrows();
 
   $(window).on('resize', adjustImageSize);
   $(window).on('resize', adjustFontSize);
+  $(window).on('resize', adjustArrows);
   $('.menu-icon').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', hideMenu);
   $('img[src="images/arrow-right.png"]').on('click', nextSlide);

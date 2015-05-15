@@ -137,6 +137,26 @@ function prevSlide() {
   $('#' + nextSlideId).addClass("slide-on");
 };
 
+function sendMail() {
+  console.log("inside sendMail()");
+  $.ajax({
+    url: 'http://localhost:3000/send_mail',
+    type: 'POST',
+    dataType: 'default',
+    data: {body: 'text box stuff'},
+  })
+  .done(function() {
+    console.log("success mail");
+  })
+  .fail(function(error) {
+    console.log("error mail: " + error.data);
+  })
+  .always(function() {
+    console.log("complete mail");
+  });
+
+}
+
 jQuery(document).ready(function() {
   hideMenu();
   adjustPage();
@@ -150,6 +170,7 @@ jQuery(document).ready(function() {
   $('#menu').on('mouseleave', hideMenu);
   $('img[src="images/arrow-right.png"]').on('click', nextSlide);
   $('img[src="images/arrow-left.png"]').on('click', prevSlide);
+  $('#my-submit-btn').on('click', sendMail);
 });
 
 

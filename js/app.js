@@ -140,10 +140,10 @@ function prevSlide() {
 function sendMail() {
   console.log("inside sendMail()");
   $.ajax({
-    url: 'http://localhost:3000/send_mail',
+    url: 'http://localhost:3000/send_email',
     type: 'POST',
     dataType: 'default',
-    data: {body: 'text box stuff'},
+    data: {body: 'text box stuff'}
   })
   .done(function() {
     console.log("success mail");
@@ -154,7 +154,6 @@ function sendMail() {
   .always(function() {
     console.log("complete mail");
   });
-
 }
 
 jQuery(document).ready(function() {

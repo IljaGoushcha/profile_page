@@ -199,7 +199,7 @@ a:hover, a:link, a:active, a:visited, h2:link {
   color: #00B200;
 }
 #page4 {
-  background-image: url("../images/abstract_orange(2000).jpg");
+  background-image: url("../images/abstract_orange(2000)(2).jpg");
   padding: 20px;
   background-size: cover;
   background-position: center;
@@ -212,6 +212,14 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 #page4 button {
   width: 100%;
+}
+#page4 .btn-primary {
+  background-color: #9828B8;
+  border-color: #9828B8;
+}
+#page4 .btn-primary:hover, #page2 .btn-primary:visited, #page2 .btn-primary:link, #page2 .btn-primary:active {
+  background-color: #CC94DC;
+  border-color: #CC94DC;
 }
 
 

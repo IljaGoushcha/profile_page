@@ -20,6 +20,18 @@ Rails.application.configure do
   # NGINX, varnish or squid.
   # config.action_dispatch.rack_cache = true
 
+  # adding per rails cast
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "mail.google.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV['gmail_username'],
+    password: ENV['gmail_password']
+  }
+
   # Disable Rails's static asset server (Apache or NGINX will already do this).
   config.serve_static_assets = false
 

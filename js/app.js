@@ -140,7 +140,7 @@ function prevSlide() {
 function sendMail() {
   console.log("inside sendMail()");
   $.ajax({
-    url: 'http://localhost:3000/send_email',
+    url: 'https://profile-page-api.herokuapp.com/send_email',
     type: 'POST',
     data: {
       name: $('#inputName').val(),

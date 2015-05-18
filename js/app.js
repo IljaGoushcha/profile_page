@@ -142,14 +142,17 @@ function sendMail() {
   $.ajax({
     url: 'http://localhost:3000/send_email',
     type: 'POST',
-    dataType: 'default',
-    data: {body: 'text box stuff'}
+    data: {
+      name: $('#inputName').val(),
+      email: $('#inputEmail').val(),
+      body: $('#inputMessage').val()
+    }
   })
   .done(function() {
     console.log("success mail");
   })
   .fail(function(error) {
-    console.log("error mail: " + error.data);
+    console.log("error mail: " + error.status);
   })
   .always(function() {
     console.log("complete mail");

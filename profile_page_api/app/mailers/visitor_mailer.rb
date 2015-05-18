@@ -4,8 +4,9 @@ class VisitorMailer < ActionMailer::Base
   def message_from_visitor(visitor)
 
     @name = visitor[:name]
+    @email = visitor[:email]
     @body = visitor[:body]
-
+    binding.pry
     mail to: "iljagou@yahoo.com", subject: "message from profile page visitor (#{@name})"
   end
 end

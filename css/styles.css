@@ -207,7 +207,12 @@ a:hover, a:link, a:active, a:visited, h2:link {
 #page4 .container {
   padding-top: 100px;
 }
-
+#page4 p {
+  font-weight: normal;
+}
+#page4 button {
+  width: 100%;
+}
 
 
 

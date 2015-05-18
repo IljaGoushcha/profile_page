@@ -23,7 +23,8 @@ Rails.application.configure do
   # adding per rails cast
   # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
+  config.middleware.insert_after Rails::Rack::Logger, Rack::Cors, :logger => Rails.logger do
+  # config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
     domain: "gmail.com",
@@ -34,7 +35,7 @@ Rails.application.configure do
   }
 
   # Disable Rails's static asset server (Apache or NGINX will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier

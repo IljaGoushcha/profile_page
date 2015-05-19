@@ -137,10 +137,11 @@ function prevSlide() {
   $('#' + nextSlideId).addClass("slide-on");
 };
 
-function sendMail() {
+function sendMail(e) {
+  e.preventDefault()
   console.log("inside sendMail()");
   $.ajax({
-    url: 'https://profile-page-api.herokuapp.com/send_email',
+    url: 'https://profile-page-mailer.herokuapp.com/send_email',
     type: 'POST',
     data: {
       name: $('#inputName').val(),
@@ -172,7 +173,9 @@ jQuery(document).ready(function() {
   $('#menu').on('mouseleave', hideMenu);
   $('img[src="images/arrow-right.png"]').on('click', nextSlide);
   $('img[src="images/arrow-left.png"]').on('click', prevSlide);
-  $('#my-submit-btn').on('click', sendMail);
+  // $('#my-submit-btn').on('click', sendMail);
+
+  $("form").on('submit', sendMail);
 });
 
 

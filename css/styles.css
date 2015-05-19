@@ -211,7 +211,10 @@ a:hover, a:link, a:active, a:visited, h2:link {
   font-weight: normal;
 }
 #page4 button {
-  width: 100%;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #page4 .btn-primary {
   background-color: #9828B8;

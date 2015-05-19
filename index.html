@@ -197,17 +197,20 @@
 
               <div class="form-group">
                 <label for="inputEmail" class="control-label"></label>
-                <input type="text" class="form-control" id="inputEmail" placeholder="enter your e-mail (optional)..." required>
+                <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail..." required>
               </div>
 
               <div class="form-group">
                 <label for="inputMessage" class="control-label"></label>
-                  <textarea type="text" class="form-control" id="inputMessage" placeholder="type messsage..."></textarea>
+                  <textarea type="text" class="form-control" id="inputMessage" placeholder="type messsage..." required></textarea>
               </div>
 
               <div class="form-group">
                 <label class="control-label"></label>
                 <button id="my-submit-btn" type="submit" class="btn btn-primary">SEND E-MAIL</button>
+                <div class="email-sent">
+                  <p>Thank you, e-mail sent successfully!!!</p>
+                </div>
               </div>
 
             </form>

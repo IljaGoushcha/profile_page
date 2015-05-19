@@ -138,7 +138,7 @@ function prevSlide() {
 };
 
 function sendMail(e) {
-  e.preventDefault()
+  e.preventDefault() // prevents page from refreshing on submit
   console.log("inside sendMail()");
   $.ajax({
     url: 'https://profile-page-mailer.herokuapp.com/send_email',
@@ -150,6 +150,8 @@ function sendMail(e) {
     }
   })
   .done(function() {
+    $('#page4 button').hide();
+    $('#page4 .email-sent').show(1000);
     console.log("success mail");
   })
   .fail(function(error) {

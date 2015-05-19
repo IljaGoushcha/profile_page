@@ -224,6 +224,16 @@ a:hover, a:link, a:active, a:visited, h2:link {
   background-color: #CC94DC;
   border-color: #CC94DC;
 }
+#page4 .email-sent {
+  display: none;
+
+}
+#page4 .email-sent p {
+  color: #608710;
+  background: rgba(255,255,255,0.5);
+  height: 30px;
+  font-size: 2em;
+}
 
 
 

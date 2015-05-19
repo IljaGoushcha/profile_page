@@ -147,14 +147,21 @@ function sendMail(e) {
       name: $('#inputName').val(),
       email: $('#inputEmail').val(),
       body: $('#inputMessage').val()
+    },
+    beforeSend: function() {
+      $('#page4 button').hide();
+      $('#page4 .email-sending').show(1000);
+      console.log("sending e-mail");
     }
   })
   .done(function() {
     $('#page4 button').hide();
     $('#page4 .email-sent').show(1000);
+    $('#page4 .email-sending').hide(1000);
     console.log("success mail");
   })
   .fail(function(error) {
+    $('#page4 button').show();
     console.log("error mail: " + error.status);
   })
   .always(function() {

@@ -118,11 +118,16 @@ function nextSlide() {
   setTimeout(function () {
     $('#' + currentSlideId).removeClass("slide-on");
     $('#' + currentSlideId).addClass("slide-off");
-    $('#' + currentSlideId).animate({"left": "0"}); // need to fix
+    // $('#' + currentSlideId).animate({"left": "0"}); // need to fix
     $('#' + nextSlideId).removeClass("slide-off");
     $('#' + nextSlideId).addClass("slide-on right");
     $('#' + nextSlideId).animate({"right": "0px"});
   }, 400);
+  setTimeout(function () {
+    $('#' + nextSlideId).removeClass("right");
+    $('#' + currentSlideId).css({"left": ""});
+    $('#' + nextSlideId).css({"right": ""});
+  }, 1000);
 };
 
 function prevSlide() {

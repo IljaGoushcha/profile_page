@@ -118,7 +118,6 @@ function nextSlide() {
   setTimeout(function () {
     $('#' + currentSlideId).removeClass("slide-on");
     $('#' + currentSlideId).addClass("slide-off");
-    // $('#' + currentSlideId).animate({"left": "0"}); // need to fix
     $('#' + nextSlideId).removeClass("slide-off");
     $('#' + nextSlideId).addClass("slide-on right");
     $('#' + nextSlideId).animate({"right": "0px"});
@@ -141,10 +140,19 @@ function prevSlide() {
   }
   console.log("current slide id: " + currentSlideId);
   console.log("next slide id: " + nextSlideId);
-  $('#' + currentSlideId).removeClass("slide-on");
-  $('#' + currentSlideId).addClass("slide-off");
-  $('#' + nextSlideId).removeClass("slide-off");
-  $('#' + nextSlideId).addClass("slide-on");
+  $('#' + currentSlideId).animate({"right": "-100%"});
+  setTimeout(function () {
+    $('#' + currentSlideId).removeClass("slide-on");
+    $('#' + currentSlideId).addClass("slide-off");
+    $('#' + nextSlideId).removeClass("slide-off");
+    $('#' + nextSlideId).addClass("slide-on left");
+    $('#' + nextSlideId).animate({"left": "0px"});
+  }, 400);
+  setTimeout(function () {
+    $('#' + nextSlideId).removeClass("left");
+    $('#' + currentSlideId).css({"right": ""});
+    $('#' + nextSlideId).css({"left": ""});
+  }, 1000);
 };
 
 function sendMail(e) {

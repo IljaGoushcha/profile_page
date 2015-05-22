@@ -175,6 +175,9 @@ a:hover, a:link, a:active, a:visited, h2:link {
 #page2 .right {
   right: -100%;
 }
+#page2 .left {
+  left: -100%;
+}
 #page2 .btn-primary {
   background-color: #9828B8;
   border-color: #9828B8;

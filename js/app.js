@@ -114,10 +114,15 @@ function nextSlide() {
   }
   console.log("current slide id: " + currentSlideId);
   console.log("next slide id: " + nextSlideId);
-  $('#' + currentSlideId).removeClass("slide-on");
-  $('#' + currentSlideId).addClass("slide-off");
-  $('#' + nextSlideId).removeClass("slide-off");
-  $('#' + nextSlideId).addClass("slide-on");
+  $('#' + currentSlideId).animate({"left": "-100%"});
+  setTimeout(function () {
+    $('#' + currentSlideId).removeClass("slide-on");
+    $('#' + currentSlideId).addClass("slide-off");
+    $('#' + currentSlideId).animate({"left": "0"}); // need to fix
+    $('#' + nextSlideId).removeClass("slide-off");
+    $('#' + nextSlideId).addClass("slide-on right");
+    $('#' + nextSlideId).animate({"right": "0px"});
+  }, 400);
 };
 
 function prevSlide() {

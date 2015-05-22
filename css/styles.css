@@ -126,6 +126,9 @@ a:hover, a:link, a:active, a:visited, h2:link {
   background-position: center;
   position: relative;
 }
+#page2 .my-slide {
+  position: relative;
+}
 #page2 h1 {
   font-size: 2em;
 }
@@ -168,6 +171,9 @@ a:hover, a:link, a:active, a:visited, h2:link {
 }
 #page2 .slide-off {
   display: none;
+}
+#page2 .right {
+  right: -100%;
 }
 #page2 .btn-primary {
   background-color: #9828B8;

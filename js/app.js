@@ -155,6 +155,11 @@ function prevSlide() {
   }, 1000);
 };
 
+function scrollPage() {
+  var height = $(window).height();
+  $("html, body").animate({ "scrollTop": height }, 1000);
+}
+
 function sendMail(e) {
   e.preventDefault() // prevents page from refreshing on submit
   console.log("inside sendMail()");
@@ -198,6 +203,9 @@ jQuery(document).ready(function() {
   $(window).on('resize', adjustArrows);
   $('.menu-icon').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', hideMenu);
+
+  $('#option1').on('click', scrollPage);
+
   $('img[src="images/arrow-right.png"]').on('click', nextSlide);
   $('img[src="images/arrow-left.png"]').on('click', prevSlide);
   // $('#my-submit-btn').on('click', sendMail);

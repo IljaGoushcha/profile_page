@@ -50,6 +50,9 @@ body {
 .option {
   display: none;
 }
+.option:hover {
+  cursor: pointer;
+}
 .option a:link, .option a:active, .option a:visited {
   text-decoration: none;
   font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;

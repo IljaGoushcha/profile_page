@@ -155,10 +155,24 @@ function prevSlide() {
   }, 1000);
 };
 
-function scrollPage() {
+function scrollToTop() {
+  $("html, body").animate({ "scrollTop": 0 }, 1000);
+};
+
+function scrollToProjects() {
   var height = $(window).height();
   $("html, body").animate({ "scrollTop": height }, 1000);
-}
+};
+
+function scrollToSkills() {
+  var height = $(window).height();
+  $("html, body").animate({ "scrollTop": height*2 }, 1000);
+};
+
+function scrollToContact() {
+  var height = $(window).height();
+  $("html, body").animate({ "scrollTop": height*3 }, 1000);
+};
 
 function sendMail(e) {
   e.preventDefault() // prevents page from refreshing on submit
@@ -204,7 +218,10 @@ jQuery(document).ready(function() {
   $('.menu-icon').on('mouseenter', openMenu);
   $('#menu').on('mouseleave', hideMenu);
 
-  $('#option1').on('click', scrollPage);
+  $('.menu-icon').on('click', scrollToTop);
+  $('#option1').on('click', scrollToProjects);
+  $('#option2').on('click', scrollToSkills);
+  $('#option3').on('click', scrollToContact);
 
   $('img[src="images/arrow-right.png"]').on('click', nextSlide);
   $('img[src="images/arrow-left.png"]').on('click', prevSlide);
